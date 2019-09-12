@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>es.thalesalv</groupId>
-	<artifactId>springmicroservices</artifactId>
+	<artifactId>spring-microservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>microservices-course</name>
 	<description>Project created for the O'Reilly Spring Microservices course</description>
