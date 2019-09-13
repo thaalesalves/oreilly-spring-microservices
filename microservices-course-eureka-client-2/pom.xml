@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>es.thalesalv</groupId>
-	<artifactId>spring-microservices-eureka-client2</artifactId>
+	<artifactId>spring-microservices-eureka-client-2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservices-course-eureka-client2</name>
+	<name>microservices-course-eureka-client-2</name>
 	<description>Project created for the O'Reilly Spring Microservices course</description>
 
 	<properties>
