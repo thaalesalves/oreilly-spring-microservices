@@ -20,7 +20,7 @@ public class MicroservicesCourseEurekaClient2Application {
 
 	@RequestMapping("/serviceinfo")
 	public String serviceInfo() {
-		InstanceInfo instance = client.getNextServerFromEureka("myClient", false);
+		InstanceInfo instance = client.getNextServerFromEureka("myOtherClient", false);
 		return instance.getHomePageUrl();
 	}
 
