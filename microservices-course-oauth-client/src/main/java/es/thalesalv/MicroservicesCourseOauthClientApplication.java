@@ -46,7 +46,7 @@ public class MicroservicesCourseOauthClientApplication {
 	@RequestMapping("/execute")
 	public String execute(Principal principal) throws Exception {
 		User user = (User) ((Authentication) principal).getPrincipal();
-		URI uri = new URI("http://localhost:9090/resource/endpoint");
+		URI uri = new URI("http://localhost:7070/resource/endpoint");
 		RequestEntity<String> request = new RequestEntity<String>(HttpMethod.POST, uri);
 		AccessTokenRequest tokenRequest = this.restTemplate.getOAuth2ClientContext().getAccessTokenRequest();
 		tokenRequest.set("username", user.getUsername());
@@ -57,5 +57,4 @@ public class MicroservicesCourseOauthClientApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MicroservicesCourseOauthClientApplication.class, args);
 	}
-
 }

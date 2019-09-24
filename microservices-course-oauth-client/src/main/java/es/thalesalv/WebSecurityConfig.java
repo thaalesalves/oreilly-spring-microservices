@@ -10,16 +10,10 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-//	@Bean
-//	// @Override
-//	public AuthenticationManager authenticationManagerBean() throws Exception {
-//		return super.authenticationManagerBean();
-//	}
-
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication().withUser("user1").password("password1").roles("USER").and().withUser("user2")
-				.password("password2").roles("ADMIN");
+		auth.inMemoryAuthentication().withUser("user").password("password1").roles("USER").and()
+			.withUser("admin").password("password2").roles("ADMIN");
 		auth.eraseCredentials(false);
 	}
 
